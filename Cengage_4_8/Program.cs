@@ -11,15 +11,32 @@ namespace Cengage_4_8
 
         static void Main(string[] args)
         {
+            //
+            // variables
+            //
             int numberCount = 3;
-            //int[] lotteryNumbers = new int[] { 1, 4, 1 };
-            int[] lotteryNumbers = GetRandomLotteryNumbers(numberCount);
-            int[] guessedNumbers = new int[] { 1, 3, 1 };
+            int[] lotteryNumbers;
+            int[] guessedNumbers;
+
+            // **********************************************************
+            // for testing 
+            //
+            // int[] lotteryNumbers = new int[] { 1, 4, 1 };
+            // int[] guessedNumbers = new int[] { 1, 3, 1 };
+            //
+
+            lotteryNumbers = GetRandomLotteryNumbers(numberCount);
+            guessedNumbers = GetUsersGuessedNumbers(numberCount);
 
             GetCorrectGuesses(lotteryNumbers, guessedNumbers, numberCount);
 
 
 
+        }
+
+        static int[] GetUsersGuessedNumbers(int numberCount)
+        {
+            throw new NotImplementedException();
         }
 
         static int[] GetRandomLotteryNumbers(int numberCount)
